@@ -81,7 +81,7 @@ Deno.serve(async (req: Request) => {
               CacheControl: "public, max-age=31536000, immutable",
             },
             queueSize: 4,
-            partSize: 50 * 1024 * 1024,
+            partSize: 30 * 1024 * 1024,
           });
 
           // 3. Monitor Progress
